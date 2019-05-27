@@ -17,9 +17,9 @@
       <button *ngIf="icon" class="btn btn-default" type="button" title="{{ icon.name }}"
               [ngClass]="{active : icon === selectedIcon}"
               (click)="selectIcon(icon)" >
-        <span *ngIf="icon.type === iconType.FONT_AWESEOME" class="fa fa-{{icon.id}}"></span>
-        <span *ngIf="icon.type === iconType.BOOTSTRAP" class="glyphicon glyphicon-{{icon.id}}"></span>
-        <span *ngIf="icon.type === iconType.FONT_AWESEOME5" class="{{icon.id}}"></span>
+        <i *ngIf="icon.type === iconType.FONT_AWESEOME" class="fa fa-{{icon.id}}"></i>
+        <i *ngIf="icon.type === iconType.BOOTSTRAP" class="glyphicon glyphicon-{{icon.id}}"></i>
+        <i *ngIf="icon.type === iconType.FONT_AWESEOME5" class="{{icon.id}}"></i>
       </button>
     </div>
   </div>
